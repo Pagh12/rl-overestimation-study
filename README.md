@@ -29,12 +29,15 @@ Custom lightweight environments designed for controlled experiments:
 - Automatic saving of plots to `Results/` for both reward and bias.
 
 ---
-# Limitations & Reflections
-- From the presented results, it is not possible to conclude that the models are appropriately implemented.
-Key issues include:
-- Some models increased their returns during training, as expected.
-- Others unexpectedly decreased their returns, which is usually only possible if the implementation is incorrect.
-- Estimation biases occasionally reached very high values (1200–1400), far beyond theoretical expectations.
+## Limitations & Reflections
+Based on the presented results (Figures 1–6), it is not possible to conclude that the models are appropriately implemented.  
+
+Some models appear to increase their returns during training, while others unexpectedly decrease. The latter behavior is typically only possible if the implementation is incorrect.  
+
+Similarly, the estimation biases reach very high values (e.g., 1200–1400 as in Figure 3), which is far beyond theoretical expectations.  
+
+These outcomes confirm that the current implementation pipeline is **not fully sound** and should be considered a **work-in-progress** rather than a finalized benchmark.
+
 
 ---
 
