@@ -29,6 +29,14 @@ Custom lightweight environments designed for controlled experiments:
 - Automatic saving of plots to `Results/` for both reward and bias.
 
 ---
+# Limitations & Reflections
+- From the presented results, it is not possible to conclude that the models are appropriately implemented.
+Key issues include:
+- Some models increased their returns during training, as expected.
+- Others unexpectedly decreased their returns, which is usually only possible if the implementation is incorrect.
+- Estimation biases occasionally reached very high values (1200–1400), far beyond theoretical expectations.
+
+---
 
 ## Installation
 Clone the repository and install dependencies:
@@ -37,3 +45,4 @@ Clone the repository and install dependencies:
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 pip install -r requirements.txt
+
